@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: 0;
+}
+
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+
+.full-screen{
+	min-height: 100%;
+}
+
+.bg{
+	background-image: url('');
+}
+
+.navigation-bar{
+	box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+}
+
+
+/*FONTES*/
+
+
+@font-face{
+	font-family: "Tw Cent";
+	src: url('../fonts/TCM_____.TTF');
+}
+
+@font-face{
+	font-family: "Poiret_One";
+	src: url('../fonts/PoiretOne-Regular.TTF');
+}
+
+@font-face{
+	font-family: Brandon_thin;
+	src: url('../fonts/Brandon_thin.otf');
+}
+
+@font-face{
+	font-family: Brandon_regular;
+	src: url('../fonts/Brandon_reg.otf');
+}
+
+@font-face{
+	font-family: "Brandon_bld";
+	src: url('../fonts/Brandon_bld.otf');
+}
+
+@font-face{
+	font-family: "Brandon_med";
+	src: url('../fonts/Brandon_med.otf');
+}
+
+@font-face{
+	font-family: "Brandon_light";
+	src: url('../fonts/Brandon_light.otf');
+}
+
+@font-face{
+	font-family: Dharma_Negrito;
+	src: url('../fonts/DharmaGothicE_Bold_R.otf');
+}
+
+@font-face{	
+	font-family: "Levenim";
+	src: url('../fonts/lvnm.ttf');
+}
+
+@font-face{
+	font-family: "Tw Cent Condensed";
+	src: url('../fonts/TCCM____.TTF');
+}
+
+@font-face{
+	font-family: "GT America";
+	src: url('../fonts/gt-america-standard-regular.ttf');
+}
+
+@font-face{
+	font-family: "GT America UI";
+	src: url('../fonts/GT-America-Trial-Compressed-Ultra-Light.otf');
+}
+
+@font-face{
+	font-family: "GT America Light";
+	src: url('../fonts/GT-America-Trial-Compressed-Light.otf');
+}
+
+.gtamerica_l{
+	font-family: "GT America Light";
+}
+
+.gtamerica_ui{
+	font-family: "GT America UI";
+}
+
+.gtamerica{
+	font-family: "GT America";
+}
+
+.tw_cent_cnd{
+	font-family: "Tw Cent Condensed";
+}
+
+.levenim{
+	font-family: Levenim;
+}
+
+.brandon_r{
+	font-family: Brandon_regular;
+}
+
+.brandon_t{
+	font-family: Brandon_thin;
+}
+
+.brandon_n{
+	font-family: Brandon_bld;
+}
+
+.brandon_m{
+	font-family: Brandon_med;
+}
+
+.brandon_l{
+	font-family: Brandon_light;
+}
+
+.tw_cent{
+	font-family: "Tw Cent";
+}
+
+.poiret{
+	font-family: Poiret_One;
+}
+
+.txt_center{
+	text-align: center;
+}
+
+h3.topo{
+	animation: fadeInLeft 1s ease;
+}
+
+h5.levenim{
+	animation: fadeIn 2s ease;
+}
+
+
+video, canvas{
+	border-radius: 15%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	animation: fadeIn 2s ease;
+	border: .5px solid;
+}
+
+div.content-container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.menu{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.menu-option{
+	position: relative;
+	border-radius: 100%;
+	height: 80px;
+	width: 80px;
+	animation: pop .8s ease;
+	color: white;
+	box-sizing: border-box;
+	padding: 10px;
+	transition: all ease .3s;
+}
+
+.menu-option:hover{
+	transition: all ease .3s;
+	transform: scale(1.1);
+}
+
+.regiao{
+	background-color: lightsalmon;
+}
+
+.metodo{
+	background-color: darkcyan;
+}
+
+button > i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+ul{
+	height: 100%;
+}
+
+ul > li{
+	padding: 5%;
+	box-sizing: border-box;
+	height: calc(100%/3);
+}
+
+footer{
+	padding-top: 3%;
+	animation: fadeInDown 2s ease;
+}

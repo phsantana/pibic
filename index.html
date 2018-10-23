@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Face Tracking</title>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<link rel="stylesheet" href="assets/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+</head>
+<body>
+
+	<div class="full-screen">
+
+		<!-- TOPO -->
+		<div class="row">
+			<div class="col m12 s12 navigation-bar">
+				<h3 class="topo brandon_l">
+					DE-IDENTIFICAÇÃO
+				</h3>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col m3 s3 center">
+				<div class="row">
+					<div class="col m12 s12">
+						<h5 class="levenim">
+							REGIÕES
+						</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col m12 s12">
+						<ul>
+							<li>
+								<button class="menu-option regiao" title="Olhos">
+									<i class="material-icons medium">remove_red_eye</i>
+								</button>
+							</li>
+
+							<li>
+								<button class="menu-option regiao" title="Boca">
+									<i class="material-icons medium">record_voice_over</i>
+								</button>
+							</li>
+
+							<li>
+								<button class="menu-option regiao" title="Face">
+									<i class="material-icons medium">face</i>
+								</button>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col m6 s6">
+				<div class="content-container">
+					<video id="video" width="320" height="240" preload autoplay loop muted></video>
+
+					<canvas id="canvas" width="320" height="240"></canvas>
+				</div>
+			</div>
+
+			<div class="col m3 s3 center">
+				<div class="row">
+					<div class="col m12 s12">
+						<h5 class="levenim">
+							MÉTODOS
+						</h5>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col m12 s12">
+						<ul>
+							<li>
+								<button class="menu-option metodo" title="Ad-Hoc 1">
+									<h5 class="tw_cent">AH 1</h5>
+								</button>
+							</li>
+
+							<li>
+								<button class="menu-option metodo" title="Ad-Hoc 2">
+									<h5 class="tw_cent">AH 2</h5>
+								</button>
+							</li>
+
+							<li>
+								<button class="menu-option metodo" title="Q-Far Based">
+									<h5 class="tw_cent">QFB</h5>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- RODAPÉ -->
+		<footer>
+			<div class="row">
+				<div class="col m12 s12 center">
+					<h6 class="tw_cent">
+						DEVELOPED BY PHILLIPE
+					</h6>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<defs>
+			<filter id="blur">
+				<feGaussianBlur stdDeviation="5" />
+			</filter>
+		</defs>
+	</svg>
+</body>
+</html>
+<script src="js/tracking-min.js"></script>
+<script src="data/face-min.js"></script>
+<script src="data/eye-min.js"></script>
+<script src="data/mouth-min.js"></script>
+<script src="js/bootstrap.js"></script>
